@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5c8ub8d415uu"]
+
+[ext_resource type="Texture2D" uid="uid://ofhnn74wpsuj" path="res://Sprites/blacksquare.png" id="1_paxrx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kyjet"]
+size = Vector2(1197, 254)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(471, -2)
+scale = Vector2(4.67969, 0.984375)
+texture = ExtResource("1_paxrx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(471.5, -1)
+shape = SubResource("RectangleShape2D_kyjet")
